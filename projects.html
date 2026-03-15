@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Woodey79 Projects — Minecraft server tools, AI experiments, web development projects, and automation tools." />
+  <title>Projects — Woodey79</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧱</text></svg>" />
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span>&lt;</span>woodey79<span>/&gt;</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="experiments.html">Experiments</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle dark/light mode">☀️</button>
+        <a href="login.html" class="btn btn-nav">Login</a>
+        <button class="nav-hamburger" aria-label="Toggle mobile menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="experiments.html">Experiments</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+  </div>
+
+  <!-- ==================== PAGE HERO ==================== -->
+  <div class="page-hero">
+    <div class="page-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Projects</span>
+      </div>
+      <h1>
+        My <span class="gradient-text">Projects</span>
+      </h1>
+      <p>
+        A collection of everything I've built — from Minecraft server tools to AI experiments,
+        web apps, and automation scripts.
+      </p>
+    </div>
+  </div>
+
+  <!-- ==================== PROJECTS CONTENT ==================== -->
+  <main style="padding: 0 0 6rem;">
+    <div class="container">
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs animate-on-scroll">
+        <button class="filter-tab active" data-filter="all">All Projects</button>
+        <button class="filter-tab" data-filter="minecraft">Minecraft</button>
+        <button class="filter-tab" data-filter="ai">AI / ML</button>
+        <button class="filter-tab" data-filter="web">Web Dev</button>
+        <button class="filter-tab" data-filter="automation">Automation</button>
+      </div>
+
+      <!-- ---- MINECRAFT CATEGORY ---- -->
+      <div class="projects-category" id="cat-minecraft">
+        <div class="category-header animate-on-scroll">
+          <div class="category-icon" aria-hidden="true">🎮</div>
+          <h2 class="category-title">Minecraft Server Tools</h2>
+          <span class="category-count">3 projects</span>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card animate-on-scroll" data-category="minecraft">
+            <div class="card-image">
+              <div class="card-image-placeholder">
+                <span class="icon" aria-hidden="true">🎮</span>
+                <span class="card-image-label">server manager</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-category">Server Management</div>
+              <h3 class="card-title">MC Server Manager</h3>
+              <p class="card-desc">
+                Comprehensive web-based dashboard for managing Minecraft servers.
+                Features include player tracking, automated backups, plugin management,
+                console access, and performance monitoring — all from a browser.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">WebSocket</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+            <div class="card-footer" style="padding: 0 1.5rem 1.5rem;">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="card-link">
+                View on GitHub <span aria-hidden="true">↗</span>
+              </a>
+              <div class="card-status">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span class="text-muted" style="font-size:0.75rem;">Active</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card animate-on-scroll delay-1" data-category="minecraft">
+            <div class="card-image">
+              <div class="card-image-placeholder">
+                <span class="icon" aria-hidden="true">📊</span>
+                <span class="card-image-label">player stats</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-category">Analytics</div>
+              <h3 class="card-title">MC Player Stats Tracker</h3>
+              <p class="card-desc">
+                Parses Minecraft server logs to build per-player statistics dashboards.
+                Tracks playtime, death counts, item usage, block interactions, and
+                generates charts and leaderboards.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">pandas</span>
+                <span class="tech-tag">Chart.js</span>
+                <span class="tech-tag">SQLite</span>
+              </div>
+            </div>
+            <div class="card-footer" style="padding: 0 1.5rem 1.5rem;">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="card-link">
+                View on GitHub <span aria-hidden="true">↗</span>
+              </a>
+              <div class="card-status">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span class="text-muted" style="font-size:0.75rem;">Active</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card animate-on-scroll delay-2" data-category="minecraft">
+            <div class="card-image">
+              <div class="card-image-placeholder">
+                <span class="icon" aria-hidden="true">💾</span>
+                <span class="card-image-label">backup tool</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-category">Utilities</div>
+              <h3 class="card-title">Auto-Backup System</h3>
+              <p class="card-desc">
+                Automated backup solution for Minecraft worlds with incremental snapshots,
+                cloud sync (S3 compatible), Discord notifications, and one-click world restore.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Bash</span>
+                <span class="tech-tag">AWS S3</span>
+                <span class="tech-tag">Discord API</span>
+              </div>
+            </div>
+            <div class="card-footer" style="padding: 0 1.5rem 1.5rem;">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="card-link">
+                View on GitHub <span aria-hidden="true">↗</span>
+              </a>
+              <div class="card-status">
+                <span class="status-dot yellow" aria-hidden="true"></span>
+                <span class="text-muted" style="font-size:0.75rem;">Beta</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ---- AI / ML CATEGORY ---- -->
+      <div class="projects-category" id="cat-ai">
+        <div class="category-header animate-on-scroll">
+          <div class="category-icon" aria-hidden="true">🤖</div>
+          <h2 class="category-title">AI Experiments &amp; Tools</h2>
+          <span class="category-count">3 projects</span>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card animate-on-scroll" data-category="ai">
+            <div class="card-image">
+              <div class="card-image-placeholder">
+                <span class="icon" aria-hidden="true">💬</span>
+                <span class="card-image-label">chatbot</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-category">AI / LLM</div>
+              <h3 class="card-title">AI Chatbot Framework</h3>
+              <p class="card-desc">
+                Modular chatbot framework built on OpenAI APIs. Supports custom system prompts,
+                long-term conversation memory with vector embeddings, tool use, and
+                multi-platform deployment (Discord, web, CLI).
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">OpenAI</span>
+                <span class="tech-tag">Discord.py</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">ChromaDB</span>
+              </div>
+            </div>
+            <div class="card-footer" style="padding: 0 1.5rem 1.5rem;">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="card-link">
+                View on GitHub <span aria-hidden="true">↗</span>
+              </a>
+              <div class="card-status">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span class="text-muted" style="font-size:0.75rem;">Active</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card animate-on-scroll delay-1" data-category="ai">
+            <div class="card-image">
+              <div class="card-image-placeholder">
+                <span class="icon" aria-hidden="true">🧪</span>
+                <span class="card-image-label">prompt toolkit</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-category">Prompt Engineering</div>
+              <h3 class="card-title">Prompt Engineering Toolkit</h3>
+              <p class="card-desc">
+                Personal UI for testing and refining LLM prompts side-by-side.
+                Features version history, A/B testing, temperature controls,
+                and automatic evaluation metrics.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">OpenAI</span>
+                <span class="tech-tag">SQLite</span>
+              </div>
+            </div>
+            <div class="card-footer" style="padding: 0 1.5rem 1.5rem;">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="card-link">
+                View on GitHub <span aria-hidden="true">↗</span>
+              </a>
+              <div class="card-status">
+                <span class="status-dot yellow" aria-hidden="true"></span>
+                <span class="text-muted" style="font-size:0.75rem;">Beta</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card animate-on-scroll delay-2" data-category="ai">
+            <div class="card-image">
+              <div class="card-image-placeholder">
+                <span class="icon" aria-hidden="true">🔍</span>
+                <span class="card-image-label">code reviewer</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-category">AI Dev Tools</div>
+              <h3 class="card-title">AI Code Reviewer</h3>
+              <p class="card-desc">
+                A CLI tool that uses GPT-4 to automatically review code commits,
+                suggest improvements, identify bugs, and enforce style guidelines
+                before pushing to GitHub.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">OpenAI GPT-4</span>
+                <span class="tech-tag">GitPython</span>
+                <span class="tech-tag">Rich</span>
+              </div>
+            </div>
+            <div class="card-footer" style="padding: 0 1.5rem 1.5rem;">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="card-link">
+                View on GitHub <span aria-hidden="true">↗</span>
+              </a>
+              <div class="card-status">
+                <span class="status-dot yellow" aria-hidden="true"></span>
+                <span class="text-muted" style="font-size:0.75rem;">In Dev</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ---- WEB DEVELOPMENT CATEGORY ---- -->
+      <div class="projects-category" id="cat-web">
+        <div class="category-header animate-on-scroll">
+          <div class="category-icon" aria-hidden="true">🌐</div>
+          <h2 class="category-title">Web Development</h2>
+          <span class="category-count">2 projects</span>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card animate-on-scroll" data-category="web">
+            <div class="card-image">
+              <div class="card-image-placeholder">
+                <span class="icon" aria-hidden="true">🏠</span>
+                <span class="card-image-label">this site</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-category">Portfolio Site</div>
+              <h3 class="card-title">woodey79.com</h3>
+              <p class="card-desc">
+                This site! A hand-crafted portfolio with modern design, animations,
+                dark mode, and mobile responsiveness — all in vanilla HTML, CSS, and JS
+                with zero dependencies.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">Vanilla JS</span>
+                <span class="tech-tag">CSS Grid</span>
+              </div>
+            </div>
+            <div class="card-footer" style="padding: 0 1.5rem 1.5rem;">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="card-link">
+                View on GitHub <span aria-hidden="true">↗</span>
+              </a>
+              <div class="card-status">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span class="text-muted" style="font-size:0.75rem;">Live</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card animate-on-scroll delay-1" data-category="web">
+            <div class="card-image">
+              <div class="card-image-placeholder">
+                <span class="icon" aria-hidden="true">📋</span>
+                <span class="card-image-label">task manager</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-category">Web App</div>
+              <h3 class="card-title">Personal Task Dashboard</h3>
+              <p class="card-desc">
+                A Kanban-style personal task manager with drag-and-drop, priorities,
+                due dates, and a clean, minimalist UI. Stores data in localStorage.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">CSS Grid</span>
+                <span class="tech-tag">Drag API</span>
+                <span class="tech-tag">localStorage</span>
+              </div>
+            </div>
+            <div class="card-footer" style="padding: 0 1.5rem 1.5rem;">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="card-link">
+                View on GitHub <span aria-hidden="true">↗</span>
+              </a>
+              <div class="card-status">
+                <span class="status-dot yellow" aria-hidden="true"></span>
+                <span class="text-muted" style="font-size:0.75rem;">Beta</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ---- AUTOMATION CATEGORY ---- -->
+      <div class="projects-category" id="cat-automation">
+        <div class="category-header animate-on-scroll">
+          <div class="category-icon" aria-hidden="true">⚙️</div>
+          <h2 class="category-title">Automation Tools</h2>
+          <span class="category-count">2 projects</span>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card animate-on-scroll" data-category="automation">
+            <div class="card-image">
+              <div class="card-image-placeholder">
+                <span class="icon" aria-hidden="true">⚡</span>
+                <span class="card-image-label">automation</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-category">Script Collection</div>
+              <h3 class="card-title">Task Automation Suite</h3>
+              <p class="card-desc">
+                A growing collection of Python automation scripts covering file management,
+                web scraping with BeautifulSoup, scheduled tasks via cron,
+                automated email reports, and desktop GUI automation.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">BeautifulSoup</span>
+                <span class="tech-tag">Selenium</span>
+                <span class="tech-tag">schedule</span>
+                <span class="tech-tag">pyautogui</span>
+              </div>
+            </div>
+            <div class="card-footer" style="padding: 0 1.5rem 1.5rem;">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="card-link">
+                View on GitHub <span aria-hidden="true">↗</span>
+              </a>
+              <div class="card-status">
+                <span class="status-dot yellow" aria-hidden="true"></span>
+                <span class="text-muted" style="font-size:0.75rem;">Growing</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card animate-on-scroll delay-1" data-category="automation">
+            <div class="card-image">
+              <div class="card-image-placeholder">
+                <span class="icon" aria-hidden="true">🤖</span>
+                <span class="card-image-label">discord bot</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-category">Bot / Integration</div>
+              <h3 class="card-title">Discord Utility Bot</h3>
+              <p class="card-desc">
+                A multi-purpose Discord bot with moderation tools, custom commands,
+                Minecraft server integration, AI-powered responses, and
+                server activity analytics.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Discord.py</span>
+                <span class="tech-tag">OpenAI</span>
+                <span class="tech-tag">SQLite</span>
+              </div>
+            </div>
+            <div class="card-footer" style="padding: 0 1.5rem 1.5rem;">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="card-link">
+                View on GitHub <span aria-hidden="true">↗</span>
+              </a>
+              <div class="card-status">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span class="text-muted" style="font-size:0.75rem;">Active</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="animate-on-scroll" style="text-align: center; padding: 2rem 0;">
+        <p class="text-muted" style="margin-bottom: 1.25rem; font-size: 1rem;">
+          Want to collaborate on something? I'm always open to interesting projects.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Get In Touch →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">&lt;woodey79/&gt;</div>
+        <p>Developer, Builder, AI Experimenter</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experiments.html">Experiments</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Woodey79. Built with ♥ and too much coffee.</p>
+      <div class="footer-socials">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
